@@ -1,0 +1,101 @@
+/* Main Container */
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+    background: linear-gradient(135deg, #1e1e1e, #2c3e50); /* Dark gradient background */
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+}
+
+/* Dashboard Content Area */
+.dashboard-content {
+    flex-grow: 1;
+    padding: 30px;
+    background: rgba(40, 40, 40, 0.95); /* Semi-transparent dark background */
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.dashboard-header h1 {
+    font-size: 2em;
+    color: #f5f5f5; /* Light text for visibility */
+    margin: 0;
+}
+
+.dashboard-header p {
+    color: #bbbbbb; /* Muted gray for secondary text */
+    font-size: 1em;
+    margin-top: 5px;
+}
+
+/* Main Dashboard Content Box */
+.dashboard-main {
+    background: #2a2a2a; /* Dark background */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow for a pop-out effect */
+    padding: 20px;
+    flex-grow: 1;
+    color: #dddddd; /* Light text for visibility */
+}
+
+/* Search Container */
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 10px;
+    border: 1px solid #444444; /* Dark border */
+    border-radius: 5px 0 0 5px;
+    background-color: #333333; /* Dark background for input */
+    color: #ffffff; /* Light text color */
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.search-input::placeholder {
+    color: #777777; /* Subtle gray placeholder color */
+}
+
+.search-input:focus {
+    border-color: #4a90e2; /* Blue border on focus */
+}
+
+/* Search Button */
+.search-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #4a90e2; /* Consistent blue accent color */
+    color: #ffffff; /* White text */
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #357ABD; /* Darker blue on hover */
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .dashboard-content {
+        padding: 15px;
+    }
+
+    .dashboard-header h1 {
+        font-size: 1.5em;
+    }
+}
